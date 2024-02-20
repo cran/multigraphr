@@ -28,10 +28,12 @@ Only practical for small multigraphs.
 }
 \examples{
 # Adjacency matrix for undirected network with 3 nodes
- A <-  matrix(c(0, 1, 2,
-                1, 2, 1,
-                2, 1, 2), nrow=3, ncol=3)
-deg <- get_degree_seq(A, 'multigraph')
+A <- matrix(c(
+    0, 1, 2,
+    1, 2, 1,
+    2, 1, 2
+), nrow = 3, ncol = 3)
+deg <- get_degree_seq(A, "multigraph")
 get_edge_multip_seq(deg)
 }
 \references{
@@ -39,6 +41,9 @@ Shafie, T. (2015). A Multigraph Approach to Social Network Analysis. \emph{Journ
 \cr
 
 Shafie, T. (2016). Analyzing Local and Global Properties of Multigraphs. \emph{The Journal of Mathematical Sociology}, 40(4), 239-264.
+\cr
+#' Shafie, T., Schoch, D. (2021). Multiplexity analysis of networks using multigraph representations.
+\emph{Statistical Methods & Applications} 30, 1425–1444.
 }
 \seealso{
 \code{\link{get_degree_seq}}
